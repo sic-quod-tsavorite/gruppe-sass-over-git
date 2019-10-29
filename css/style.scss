@@ -3,3 +3,45 @@
     padding: 0;
     background-color: #fefefe;
 }
+
+@function workoutP($weekP, $exercise) {
+    @return map-get(map-get($days, $weekP), $exercise);
+}
+
+$days:(
+    thursday:(
+        completed: true
+    ),
+    friday:(
+        completed: false
+    ),
+    sunday:(
+        completed: false
+    )
+);
+
+@mixin workout($completed) {
+    width: 300px;
+    height: 100px;
+    color: black;
+    @if $completed {
+        background-color: lightgreen;
+        font-family: 'Staatliches', cursive;
+    }
+    @else {
+        background-color: red;
+        font-family: 'Pacifico', cursive;
+    }
+}
+
+.thursday {
+    @include workout(workoutP(thursday, completed));
+}
+
+.friday {
+    @include workout(workoutP(friday, completed));
+}
+
+.sunday {
+    @include workout(workoutP(sunday, completed));
+}

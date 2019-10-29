@@ -4,4 +4,28 @@
   background-color: #fefefe;
 }
 
+.thursday {
+  width: 300px;
+  height: 100px;
+  color: black;
+  background-color: lightgreen;
+  font-family: "Staatliches", cursive;
+}
+
+.friday {
+  width: 300px;
+  height: 100px;
+  color: black;
+  background-color: red;
+  font-family: "Pacifico", cursive;
+}
+
+.sunday {
+  width: 300px;
+  height: 100px;
+  color: black;
+  background-color: red;
+  font-family: "Pacifico", cursive;
+}
+
 /*# sourceMappingURL=style.css.map */
