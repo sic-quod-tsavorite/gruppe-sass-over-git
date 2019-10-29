@@ -1,7 +1,15 @@
-* {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
   margin: 0;
   padding: 0;
   background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.left {
+  margin-right: 20px;
 }
 
 .thursday {
