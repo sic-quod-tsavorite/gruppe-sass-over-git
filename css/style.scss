@@ -1,7 +1,16 @@
-*{
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
     margin: 0;
     padding: 0;
     background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left {
+    margin-right: 20px;
 }
 
 @function workoutP($weekP, $exercise) {
@@ -10,13 +19,19 @@
 
 $days:(
     thursday:(
-        completed: true
+        completed: true,
+        name: bench,
+        reps: 10
     ),
     friday:(
-        completed: false
+        completed: false,
+        name: legs,
+        reps: 7
     ),
     sunday:(
-        completed: false
+        completed: false,
+        name: triseps,
+        reps: 6
     )
 );
 
