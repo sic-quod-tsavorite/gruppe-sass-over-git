@@ -4,32 +4,30 @@
 
 $days: (
     monday:(
-        studentID: 007,
-        teacher: "The Awesome One",
-        completed: true
+        completed: true,
+        name: squads,
+        reps: 5
+        
     ),
     tuesday:(
-        studentID: 007,
-        teacher: "The Chosen",
-        completed: true
+        completed: true,
+        name: chest,
+        reps: 2
     ),
     wednesday:(
-        studentID: 007,
-        teacher: "The Dude",
-        completed: false
+        completed: false,
+        name: biceps,
+        reps: 10
     )
 );
-
-
-
-
 
 @mixin workout ($completed) {
     width: 300px;
     height: 100px;
-    color:yellow; 
+    color:black; 
     @if $completed {
         background-color: lightgreen; 
+        
     } @else {
         background-color: red;
     }
