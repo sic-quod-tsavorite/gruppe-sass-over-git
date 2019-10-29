@@ -44,3 +44,16 @@ $days: (
 .wednesday {
     @include workout(workoutP(wednesday, completed));
 }
+
+.monday:before {
+    content: 'This is driving me nuuuuts';
+}
+
+.tuesday:before {
+    content: 'Reeeeeeeeeeeeeeeeeeeeeee';
+}
+
+
+.wednesday:before {
+    content: 'ahaaaaaaaaaaaaaaaaaaaaaaaaaa';
+}

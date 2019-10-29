@@ -16,4 +16,13 @@
   color: black;
   background-color: red; }
 
+.monday:before {
+  content: 'This is driving me nuuuuts'; }
+
+.tuesday:before {
+  content: 'Reeeeeeeeeeeeeeeeeeeeeee'; }
+
+.wednesday:before {
+  content: 'ahaaaaaaaaaaaaaaaaaaaaaaaaaa'; }
+
 /*# sourceMappingURL=style2.css.map */
